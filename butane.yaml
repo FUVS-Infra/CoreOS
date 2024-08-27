@@ -1,0 +1,40 @@
+variant: fcos
+version: 1.5.0
+passwd:
+  users:
+    - name: matteusmaximo
+      ssh_authorized_keys: 
+        - ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBH51uujjU3J736zCnFn5Fnt7k0oOv3Lpw+flxCjHeEKZjHQ40MfjDeCFOVPm2h/i4ueuv1ZPfvY0UunN2S3+a+s= ecdsa-key-20240801
+      home_dir: /home/matteusmaximo
+      no_create_home: true
+      groups:
+        - wheel
+      shell: /bin/bash
+    - name: herickdouglas
+      ssh_authorized_keys:
+        - ecdsa-sha2-nistp384 AAAAE2VjZHNhLXNoYTItbmlzdHAzODQAAAAIbmlzdHAzODQAAABhBE3+9QuTL6VkkMr4uER8eBXoBk6SrWSqU6SVK2WC7spGDX2e8pkXA8Rj8JqGJb4nauAt6E2+j8HwbafE1+uQViT9fzq61lk8ybB+zgA/tDT9Bsn/qfUBQAhXhB8oZj4V5Q== ecdsa-key-20240821
+      home_dir: /home/herickdouglas
+      no_create_home: true
+      groups:
+        - wheel
+storage:
+  disks:
+    - device: /dev/disk/by-id/coreos-boot-disk
+      wipe_table: false
+      partitions:
+        - number: 1
+          label: var
+  filesystems:
+    - path: /var
+      device: /dev/disk/by-partlabel/var
+      format: btrfs
+      label: var
+      with_mount_unit: true
+  links:
+    - path: /etc/localtime
+      target: ../usr/share/zoneinfo/America/Sao_Paulo
+  files:
+    - path: /etc/vconsole.conf
+      mode: 0644
+      contents:
+        inline: KEYMAP=br-abnt2
