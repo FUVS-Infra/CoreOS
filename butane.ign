@@ -8,7 +8,6 @@
         "groups": [
           "wheel"
         ],
-        "homeDir": "/home/matteusmaximo",
         "name": "matteusmaximo",
         "noCreateHome": true,
         "sshAuthorizedKeys": [
@@ -20,7 +19,6 @@
         "groups": [
           "wheel"
         ],
-        "homeDir": "/home/herickdouglas",
         "name": "herickdouglas",
         "noCreateHome": true,
         "sshAuthorizedKeys": [
@@ -35,8 +33,14 @@
         "device": "/dev/disk/by-id/coreos-boot-disk",
         "partitions": [
           {
+            "label": "root",
+            "number": 4,
+            "resize": true,
+            "sizeMiB": 16384
+          },
+          {
             "label": "var",
-            "number": 1
+            "sizeMiB": 0
           }
         ],
         "wipeTable": false
