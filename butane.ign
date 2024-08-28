@@ -6,23 +6,25 @@
     "users": [
       {
         "groups": [
-          "wheel"
+          "wheel",
+          "sudo"
         ],
         "name": "matteusmaximo",
         "noCreateHome": true,
         "sshAuthorizedKeys": [
-          "ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBH51uujjU3J736zCnFn5Fnt7k0oOv3Lpw+flxCjHeEKZjHQ40MfjDeCFOVPm2h/i4ueuv1ZPfvY0UunN2S3+a+s= ecdsa-key-20240801"
+          "ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBH51uujjU3J736zCnFn5Fnt7k0oOv3Lpw+flxCjHeEKZjHQ40MfjDeCFOVPm2h/i4ueuv1ZPfvY0UunN2S3+a+s="
         ],
         "shell": "/bin/bash"
       },
       {
         "groups": [
-          "wheel"
+          "wheel",
+          "sudo"
         ],
         "name": "herickdouglas",
         "noCreateHome": true,
         "sshAuthorizedKeys": [
-          "ecdsa-sha2-nistp384 AAAAE2VjZHNhLXNoYTItbmlzdHAzODQAAAAIbmlzdHAzODQAAABhBE3+9QuTL6VkkMr4uER8eBXoBk6SrWSqU6SVK2WC7spGDX2e8pkXA8Rj8JqGJb4nauAt6E2+j8HwbafE1+uQViT9fzq61lk8ybB+zgA/tDT9Bsn/qfUBQAhXhB8oZj4V5Q== ecdsa-key-20240821"
+          "ecdsa-sha2-nistp384 AAAAE2VjZHNhLXNoYTItbmlzdHAzODQAAAAIbmlzdHAzODQAAABhBE3+9QuTL6VkkMr4uER8eBXoBk6SrWSqU6SVK2WC7spGDX2e8pkXA8Rj8JqGJb4nauAt6E2+j8HwbafE1+uQViT9fzq61lk8ybB+zgA/tDT9Bsn/qfUBQAhXhB8oZj4V5Q=="
         ]
       }
     ]
